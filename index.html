@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!--Modfied from MDN HTML beginner's guide
+	Create hyperlinks and a global navigation for this simple website-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My sample homepage</title>
+  </head>
+
+  <body>
+
+<style>
+/* Just a bit of eye candy... */
+body {
+	margin: 0;
+}
+nav {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background: #7777ff;
+	margin: 0;
+	font: lighter 120% sans-serif;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 750px;
+	margin: 0 auto;
+}
+nav ul li a {
+	color: white;
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+main {
+	max-width: 750px;
+	margin: 10px auto;
+}
+</style>
+  
+	  <nav>
+		  <ul>
+			  <li><a href="./index.html">Home</a></li>
+			  <li><a href="./contacts.html">Contact</a></li>
+			  <li><a href="./projects/index.html">Projects</a></li>
+			  <li><a href="./pdfs/project-brief.pdf" target="_blank">Project Brief</a></li>
+		  </ul>
+	  </nav>
+
+	  <main>
+    <h1>This is my sample homepage</h1>
+
+    <p>Visit my <a href="projects/index.html">project homepage</a>.</p>
+
+    <p>Want to contact a specific staff member? Find details on our <a href ="contacts.html"> contacts page</a>.</p>
+
+    <p>Want to write us a letter? Use our mailing address<!-- Need hyperlink -->.</p>
+	  </main>
+  </body>
+</html>
